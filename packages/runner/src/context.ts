@@ -67,6 +67,7 @@ export function withTimeout<T extends (...args: any[]) => any>(
           return
         }
         resolve_(result)
+        // setTimeout(() => resolve_(result), 20)
       }
 
       function reject(error: unknown) {

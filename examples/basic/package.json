@@ -3,7 +3,6 @@
   "type": "module",
   "private": true,
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -12,7 +11,15 @@
   "devDependencies": {
     "@vitest/ui": "latest",
     "vite": "latest",
-    "vitest": "latest"
+    "vitest": "latest",
+    "@testing-library/react": "latest",
+    "@types/react": "latest",
+    "playwright": "^1.50.1",
+    "@vitest/browser": "latest"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
   },
   "stackblitz": {
     "startCommand": "npm run test:ui"
